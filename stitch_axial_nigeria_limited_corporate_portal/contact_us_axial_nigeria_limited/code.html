@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Axial Nigeria Limited</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts as per Design System -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#eac166",
+                    "on-primary-fixed": "#071b37",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "on-surface": "#151c27",
+                    "secondary-container": "#9dbffd",
+                    "background": "#f9f9ff",
+                    "surface": "#f9f9ff",
+                    "surface-tint": "#4d5f7e",
+                    "primary-fixed": "#d6e3ff",
+                    "on-tertiary-fixed": "#251a00",
+                    "on-secondary-fixed": "#001b3e",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#dce2f3",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#44474d",
+                    "secondary-fixed": "#d6e3ff",
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface-container-low": "#f0f3ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#a5822d",
+                    "on-background": "#151c27",
+                    "secondary": "#3b5f96",
+                    "inverse-surface": "#2a313d",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#aac7ff",
+                    "tertiary-fixed": "#ffdf9c",
+                    "primary-container": "#0b1f3b",
+                    "surface-container-high": "#e2e8f8",
+                    "on-primary-fixed-variant": "#364765",
+                    "primary-fixed-dim": "#b5c7eb",
+                    "surface-container": "#e7eefe",
+                    "surface-container-highest": "#dce2f3",
+                    "inverse-primary": "#b5c7eb",
+                    "tertiary-container": "#2a1d00",
+                    "tertiary": "#0b0600",
+                    "surface-dim": "#d3daea",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#c5c6ce",
+                    "on-primary-container": "#7587a9",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f9f9ff",
+                    "on-secondary-fixed-variant": "#20467d",
+                    "primary": "#000616",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#284d84",
+                    "outline": "#75777e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "gutter": "32px",
+                    "unit": "8px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Public Sans"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "body-lg": ["Public Sans"],
+                    "label-md": ["JetBrains Mono"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Engineering Grid Pattern Utility */
+        .bg-engineering-grid {
+            background-image: 
+                linear-gradient(to right, rgba(197, 198, 206, 0.3) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(197, 198, 206, 0.3) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        
+        /* Subtle Tonal Lift */
+        .premium-shadow {
+            box-shadow: 0 10px 40px -10px rgba(11, 31, 59, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-surface antialiased flex flex-col min-h-screen">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-surface/95 dark:bg-surface-dim/95 sticky top-0 w-full z-50 border-b border-outline-variant/30 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-surface-bright tracking-tight" href="#">
+                Axial Nigeria Limited
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Projects</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Investment</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Why Axial</a>
+</nav>
+<!-- Trailing Action -->
+<button class="hidden md:flex bg-primary-container text-on-primary-fixed hover:bg-secondary transition-colors duration-300 px-6 py-2 rounded font-label-md text-label-md text-on-tertiary">
+                Start Your Project
+            </button>
+<!-- Mobile Menu Icon (Visual Only) -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-32 overflow-hidden border-b border-outline-variant/30">
+<!-- Engineering Grid Background -->
+<div class="absolute inset-0 bg-engineering-grid z-0"></div>
+<!-- Subtle gradient fade at bottom to merge with background -->
+<div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent z-0"></div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-2xl">
+<span class="block font-label-md text-label-md text-secondary tracking-widest uppercase mb-4">Initial Consultation</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6">Connect With Excellence.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Engage our engineering and investment specialists to blueprint your next major structural development or high-yield real estate acquisition.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Contact Two-Column Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Contact Form (7 Cols) -->
+<div class="lg:col-span-7 premium-shadow bg-surface-container-lowest border border-outline-variant/50 p-8 md:p-12">
+<div class="mb-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Project Inquiry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Provide preliminary details to initiate dialogue with our structural team.</p>
+</div>
+<form class="space-y-8">
+<!-- Structural Layout for Inputs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase" for="firstName">First Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant px-0 py-3 focus:outline-none focus:border-b-2 focus:border-secondary transition-all font-body-md text-body-md text-on-surface" id="firstName" placeholder="e.g. Architect" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase" for="lastName">Last Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant px-0 py-3 focus:outline-none focus:border-b-2 focus:border-secondary transition-all font-body-md text-body-md text-on-surface" id="lastName" placeholder="e.g. Smith" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase" for="email">Corporate Email</label>
+<input class="w-full bg-transparent border-b border-outline-variant px-0 py-3 focus:outline-none focus:border-b-2 focus:border-secondary transition-all font-body-md text-body-md text-on-surface" id="email" placeholder="contact@firm.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase" for="interest">Area of Interest</label>
+<select class="w-full bg-transparent border-b border-outline-variant px-0 py-3 focus:outline-none focus:border-b-2 focus:border-secondary transition-all font-body-md text-body-md text-on-surface appearance-none rounded-none" id="interest">
+<option disabled="" selected="" value="">Select specialization...</option>
+<option value="spatial">Spatial Design</option>
+<option value="urban">Urban Renewal</option>
+<option value="infrastructure">Infrastructure</option>
+<option value="investment">Real Estate Investment</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase" for="message">Project Specifications</label>
+<textarea class="w-full bg-transparent border border-outline-variant p-4 focus:outline-none focus:border-b-2 focus:border-secondary transition-all font-body-md text-body-md text-on-surface resize-none" id="message" placeholder="Detail your project scope, timeline, and structural requirements..." required="" rows="4"></textarea>
+</div>
+<button class="w-full md:w-auto inline-flex justify-center items-center gap-2 bg-primary-container text-on-tertiary font-label-md text-label-md py-4 px-8 rounded transition-all duration-300 hover:opacity-90 hover:shadow-lg" type="submit">
+                            Submit Inquiry
+                            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Right Column: Company Info (5 Cols) -->
+<div class="lg:col-span-5 h-full flex flex-col gap-8">
+<!-- Map Placeholder -->
+<div class="w-full h-64 border border-outline-variant overflow-hidden relative group">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="A highly detailed, architectural style satellite map view of Lagos, Nigeria. The map is rendered in high contrast black and white with subtle navy blue and gold accents highlighting major infrastructure arteries. The style mimics a professional surveying document or structural blueprint, emphasizing grid lines and topography in a modern, luxury corporate aesthetic." data-location="Lagos, Nigeria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbKn0BrOsutU0qWJiUigRKPukw_3vnsp6mnvOUsryvXPmxn0izru5D2VsApumxBryKkxVhCWD2XdgON9ZbJus8z3dfBNpjTLGhsK6ZE2LxmOz7Lkzshu5G_YJJ-OAkTbIEzinj_8Az88b9YS0Te_6WzaO4zM_P8Kw_NSqCCjW5V-KmBjDvPa6UCX6PhuSf-wVPJFE_AbxnDCuDXbJCHUzjK4rS0V8mPjMLXST2cTXekkg9qNRHx_b9pQ"/>
+<div class="absolute bottom-4 left-4 bg-surface px-3 py-1 border border-outline-variant shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface tracking-widest uppercase">Coordinates Engaged</span>
+</div>
+</div>
+<!-- Contact Details Box -->
+<div class="border border-outline-variant bg-surface-container-low p-8 flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface border-b border-outline-variant pb-4 mb-6">Axial Nigeria Limited</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="mt-1 text-secondary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant tracking-wider mb-1">HQ ADDRESS</span>
+<span class="font-body-md text-body-md text-on-surface block leading-relaxed">
+                                        14 Structural Avenue,<br/>
+                                        Victoria Island,<br/>
+                                        Lagos, Nigeria.
+                                    </span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 text-secondary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant tracking-wider mb-1">DIRECT LINE</span>
+<span class="font-body-md text-body-md text-on-surface block">
+                                        +234 (0) 1 234 5678
+                                    </span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 text-secondary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant tracking-wider mb-1">COMMUNICATIONS</span>
+<span class="font-body-md text-body-md text-on-surface block">
+                                        engineering@axialnigeria.com
+                                    </span>
+</div>
+</li>
+</ul>
+<div class="mt-10 pt-6 border-t border-outline-variant">
+<span class="block font-label-sm text-label-sm text-on-surface-variant tracking-wider mb-2">OPERATING HOURS</span>
+<span class="font-body-md text-body-md text-on-surface block">Mon - Fri: 08:00 - 18:00 (WAT)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Banner -->
+<section class="bg-primary-container border-y border-secondary">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-tertiary mb-4">Start Your Project With Axial</h2>
+<p class="font-body-lg text-body-lg text-surface-dim max-w-xl">
+                        Partner with a legacy of engineering excellence. Secure structural integrity and superior investment returns.
+                    </p>
+</div>
+<button class="flex-shrink-0 bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-md text-label-md py-4 px-10 rounded border border-tertiary-fixed transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl shadow-black/20">
+                    Initiate Engagement
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-primary-container dark:bg-tertiary-container w-full border-t border-secondary flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-6">
+<span class="font-headline-sm text-headline-sm font-bold text-surface-bright">
+                    Axial Nigeria Limited
+                </span>
+<p class="text-surface-container-low dark:text-on-primary-fixed font-body-md text-body-md opacity-80">
+                    Engineering precision meets high-end real estate investment. A legacy of structural integrity.
+                </p>
+</div>
+<!-- Navigation Links -->
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<!-- Link Group 1 -->
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm text-surface-bright tracking-widest uppercase opacity-50">Expertise</span>
+<a class="font-body-md text-body-md text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Spatial Design</a>
+<a class="font-body-md text-body-md text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Harbinger Investments</a>
+<a class="font-body-md text-body-md text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Urban Renewal</a>
+</div>
+<!-- Link Group 2 -->
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm text-surface-bright tracking-widest uppercase opacity-50">Operations</span>
+<a class="font-body-md text-body-md text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Infrastructure</a>
+<a class="font-body-md text-body-md text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Office Locations</a>
+<!-- Active State for Contact Us based on page intent -->
+<a class="font-body-md text-body-md text-tertiary-fixed-dim font-bold hover:text-tertiary-fixed transition-all underline" href="#">Contact Us</a>
+</div>
+</div>
+<!-- Copyright / Bottom Row -->
+<div class="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-sm text-label-sm text-surface-container-low dark:text-on-primary-fixed opacity-70">
+                    © 1987-2024 Axial Nigeria Limited. All rights reserved. Engineering &amp; Real Estate Excellence.
+                </span>
+<div class="flex gap-4">
+<a class="text-surface-bright opacity-70 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-surface-bright opacity-70 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">business</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

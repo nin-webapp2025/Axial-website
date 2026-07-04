@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects - Axial Nigeria Limited</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Public+Sans:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#eac166",
+                    "on-primary-fixed": "#071b37",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "on-surface": "#151c27",
+                    "secondary-container": "#9dbffd",
+                    "background": "#f9f9ff",
+                    "surface": "#f9f9ff",
+                    "surface-tint": "#4d5f7e",
+                    "primary-fixed": "#d6e3ff",
+                    "on-tertiary-fixed": "#251a00",
+                    "on-secondary-fixed": "#001b3e",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#dce2f3",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#44474d",
+                    "secondary-fixed": "#d6e3ff",
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface-container-low": "#f0f3ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#a5822d",
+                    "on-background": "#151c27",
+                    "secondary": "#3b5f96",
+                    "inverse-surface": "#2a313d",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#aac7ff",
+                    "tertiary-fixed": "#ffdf9c",
+                    "primary-container": "#0b1f3b",
+                    "surface-container-high": "#e2e8f8",
+                    "on-primary-fixed-variant": "#364765",
+                    "primary-fixed-dim": "#b5c7eb",
+                    "surface-container": "#e7eefe",
+                    "surface-container-highest": "#dce2f3",
+                    "inverse-primary": "#b5c7eb",
+                    "tertiary-container": "#2a1d00",
+                    "tertiary": "#0b0600",
+                    "surface-dim": "#d3daea",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#c5c6ce",
+                    "on-primary-container": "#7587a9",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f9f9ff",
+                    "on-secondary-fixed-variant": "#20467d",
+                    "primary": "#000616",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#284d84",
+                    "outline": "#75777e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "gutter": "32px",
+                    "unit": "8px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Public Sans"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "body-lg": ["Public Sans"],
+                    "label-md": ["JetBrains Mono"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .grid-lines {
+            background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px), linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col relative grid-lines">
+<!-- TopNavBar -->
+<nav class="bg-surface/95 dark:bg-surface-dim/95 sticky top-0 w-full z-50 border-b border-outline-variant/30 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-surface-bright tracking-tight" href="#">
+                Axial Nigeria Limited
+            </a>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md opacity-80 transition-all hover:text-secondary duration-300" href="#">Projects</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Investment</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-300" href="#">Why Axial</a>
+</div>
+<button class="hidden md:inline-flex bg-primary-container text-on-primary hover:bg-gradient-to-r hover:from-primary-container hover:to-secondary transition-all duration-300 px-6 py-3 rounded text-label-md font-label-md">
+                Start Your Project
+            </button>
+<!-- Mobile Menu Toggle (Simplified for structure) -->
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow max-w-container-max w-full mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<!-- Header Section -->
+<header class="mb-16 md:mb-24 relative z-10">
+<h1 class="font-display-lg text-display-lg text-primary-container mb-6">Our Projects</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-2 border-secondary pl-6">
+                A showcase of engineering excellence and architectural luxury. Exploring our portfolio of high-end real estate, structural innovations, and urban infrastructure developments.
+            </p>
+</header>
+<!-- Filters (Technical Style) -->
+<div class="mb-12 border-b border-outline-variant/50 pb-6 flex flex-wrap gap-4 items-center">
+<span class="font-label-md text-label-md text-outline mr-4 uppercase tracking-widest">Filter By:</span>
+<button class="px-4 py-2 bg-primary-container text-on-primary rounded font-label-sm text-label-sm transition-all shadow-[0_4px_12px_rgba(11,31,59,0.15)]">ALL PROJECTS</button>
+<button class="px-4 py-2 bg-transparent border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary rounded font-label-sm text-label-sm transition-colors">SUBSTATIONS</button>
+<button class="px-4 py-2 bg-transparent border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary rounded font-label-sm text-label-sm transition-colors">HOUSING</button>
+<button class="px-4 py-2 bg-transparent border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary rounded font-label-sm text-label-sm transition-colors">INFRASTRUCTURE</button>
+<button class="px-4 py-2 bg-transparent border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary rounded font-label-sm text-label-sm transition-colors">COMMERCIAL</button>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Project Card 1 -->
+<article class="project-card group bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden flex flex-col hover:shadow-[0_8px_30px_rgba(11,31,59,0.08)] transition-all duration-500">
+<div class="relative h-64 overflow-hidden border-b border-outline-variant/30">
+<img class="project-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="A high-end architectural rendering of a modern electrical substation complex. The design is sleek, industrial, and highly structured, featuring clean lines, steel frameworks, and precise geometric layouts. The scene is lit with bright, clear daylight casting sharp shadows, set against a crisp white and light grey background, emphasizing structural integrity and modern engineering aesthetics. Corporate luxury feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClD7ZMBU1fBKhwoFKqQ8hG_U73oPeefNNRLnJ8-L-jcDjESp2ZLb2Jz0RhgwNsDCziF6htBMVuJHq4H8cqxnaJpsTUv7Gdyy6UqrwP6aoKcz0XEZ4J_8ezP8yrY7A5v3-nQbn7UXl2vkEi7HsJEbHmi8jYlIYO6hyj6r_8s7keNy_i-nFDVyOAUPpxYRlwrPTuJz9ooe4fYHR2Jp4F5hva8PZPYimS4AwFYlrEBZqbf3ehQaJnD1JPKg"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 border border-outline-variant font-label-sm text-label-sm text-on-surface-variant rounded">COMPLETED</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-2">Substation</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-4">Lekki Phase 1 Distribution Center</h3>
+<div class="mt-auto space-y-3">
+<div class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined mr-2 text-[18px]">location_on</span>
+                            Lagos, Nigeria
+                        </div>
+<div class="flex gap-2">
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">33kV</span>
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">TURNKEY</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Project Card 2 -->
+<article class="project-card group bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden flex flex-col hover:shadow-[0_8px_30px_rgba(11,31,59,0.08)] transition-all duration-500">
+<div class="relative h-64 overflow-hidden border-b border-outline-variant/30">
+<img class="project-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="An expansive luxury residential housing development viewed from an elevated angle. The architecture features minimalist, flat-roofed villas with extensive glass facades, surrounded by manicured green spaces. The color palette is dominated by pristine whites, deep navy accents, and lush greens, set under a clear blue sky. The lighting highlights the high-end materials and structured layout of the premium estate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAahCOgbypPN-y_l3sMhmvxI0crFALWmmIcZfmlZLton2ebi9oAVb3d31_q2ZfcHMg5eWmYkgjQEED83pL8SMFvpGCzjM7pONh4q19KAOSK3qwuecWzDa_fKP5sHTAVaWmWznG2ZIGRVylD5QLydC5eDPF6FaYCe9zVzR4tN72AKNxXT86dteo6iewERrQdxI_5t59T7jZiJulE0urxcRlnejK8As8kGZyL9XuoYus6YtVrOFQRdPMG3w"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/90 backdrop-blur px-3 py-1 border border-on-tertiary-fixed-variant/20 font-label-sm text-label-sm text-on-tertiary-fixed-variant rounded">IN PROGRESS</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-2">Housing Development</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-4">The Azure Residences</h3>
+<div class="mt-auto space-y-3">
+<div class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined mr-2 text-[18px]">location_on</span>
+                            Victoria Island, Lagos
+                        </div>
+<div class="flex gap-2">
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">120 UNITS</span>
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">PREMIUM</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Project Card 3 -->
+<article class="project-card group bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden flex flex-col hover:shadow-[0_8px_30px_rgba(11,31,59,0.08)] transition-all duration-500 lg:col-span-1 md:col-span-2">
+<div class="relative h-64 overflow-hidden border-b border-outline-variant/30">
+<img class="project-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="A grand commercial office building featuring a striking geometric glass and steel exterior. The building stands tall in an urban setting, reflecting the surrounding cityscape and clear sky. The image emphasizes structural precision and corporate dominance, using a palette of cool greys, steel blues, and bright whites to convey a modern, architectural luxury aesthetic. Shot from a dramatic low angle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQb5kxYI9A0B9VYe3_Y3xS7FsypoNRj4zVJHngByCj5GFE42hq1Jc3gvZqYsXMhtO-2JcNZ5du8LpyTOWEVw3MSHTqlXZdDmLAYA9Xryb1_dA3M650NqoNheRg_s3crmuVqPaurXO_09ZCOR2UQP4AF44XxhVzK9UNHPdHrAFWGRg9r5eHXStmeppW3E90eI79i5MbWEnUauKrNgTziE_jNeP7wb8_WNJLX-7JFcCjc9PG1V2Ew9mhsA"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 border border-outline-variant font-label-sm text-label-sm text-on-surface-variant rounded">COMPLETED</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-2">Commercial</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-4">Axial Corporate Tower</h3>
+<div class="mt-auto space-y-3">
+<div class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined mr-2 text-[18px]">location_on</span>
+                            Abuja, FCT
+                        </div>
+<div class="flex gap-2">
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">15 FLOORS</span>
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">LEED CERTIFIED</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Project Card 4 -->
+<article class="project-card group bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden flex flex-col hover:shadow-[0_8px_30px_rgba(11,31,59,0.08)] transition-all duration-500 md:col-span-2">
+<div class="relative h-64 md:h-80 overflow-hidden border-b border-outline-variant/30">
+<img class="project-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="A massive urban infrastructure project showing a modern suspension bridge under construction. The scene is dominated by intricate steel cables, massive concrete pylons, and heavy construction equipment, all rendered with sharp, blueprint-like clarity. The lighting is early morning, casting long shadows that highlight the structural depth. The palette is industrial greys, safety yellows, and crisp sky blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyRPGaE5pwQ2GYmdR11wegAWFmW2XDeyc3HP-Vpf3J1vrYnwp_lQZRBiWPHXcls-AvF44pwwEQDG1bIjcI-e2CtD5AZ6hRkgxYDn2I--wBjTiMtkn3RME8oldj3wZCxeUQ28WqPNuxnUxRcVbGg4UyDG51hMVbN4amu39Ec2HPp5qz2XBWv601uiAE9JEU4V3M1pM2ZrwwnbVdunBxV4y_RO3qRzlmRFr7WTSgXwjo94Zb5amm1nzaTQ"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/90 backdrop-blur px-3 py-1 border border-on-tertiary-fixed-variant/20 font-label-sm text-label-sm text-on-tertiary-fixed-variant rounded">PLANNING</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-2">Infrastructure</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-4">Mainland Transit Link</h3>
+<div class="mt-auto space-y-3">
+<div class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined mr-2 text-[18px]">location_on</span>
+                            Lagos, Nigeria
+                        </div>
+<div class="flex gap-2">
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">2.4 KM</span>
+<span class="px-2 py-1 border border-outline-variant text-on-surface-variant font-label-sm text-label-sm rounded text-[10px]">GOVT PARTNERSHIP</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-tertiary-container w-full border-t border-secondary mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="col-span-1 md:col-span-1 flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-surface-bright mb-4">Axial Nigeria Limited</span>
+<p class="font-body-md text-body-md text-surface-container-low dark:text-on-primary-fixed mt-auto text-sm">
+                    © 1987-2024 Axial Nigeria Limited. All rights reserved. Engineering &amp; Real Estate Excellence.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col space-y-4">
+<a class="font-label-sm text-label-sm text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Spatial Design</a>
+<a class="font-label-sm text-label-sm text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Harbinger Investments</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-sm text-label-sm text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Urban Renewal</a>
+<a class="font-label-sm text-label-sm text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Infrastructure</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-sm text-label-sm text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Office Locations</a>
+<a class="font-label-sm text-label-sm text-on-primary-container/80 dark:text-on-tertiary-container/80 hover:text-tertiary-fixed transition-all underline" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
